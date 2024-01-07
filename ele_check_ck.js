@@ -27,7 +27,6 @@ async function testCookie(cookie) {
     try {
         const response = await got(options);
         const responseBody = JSON.parse(response.body);
-        console.log(response.body)
         return responseBody;
     } catch (error) {
         // 检查 error.response 是否存在
